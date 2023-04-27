@@ -1,0 +1,27 @@
+
+@use "../../styles/vars";
+
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  background: vars.$color-background-list-item;
+  border-radius: 3px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+
+  .checkbox {
+    margin-right: 0.5rem;
+  }
+
+  &--done {
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+
+  .button {
+    color:red;
+    border: 0px;
+    text-decoration: none;
+  }
+}
